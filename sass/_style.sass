@@ -1,0 +1,71 @@
+*
+    box-sizing: border-box
+
+.error
+    background: #DEAB2A
+    margin-bottom: 0.3em
+
+.off
+    height: 0
+    width: 0
+    margin: 0
+    padding: 0
+    opacity: 0
+    overflow: hidden
+    +transition(all, 0.2s, ease)
+
+.on
+    height: auto
+    opacity: 1
+    +transition(all, 0.2s, ease)
+
+body
+    padding: 1em
+    background: #F5EE90
+    font-family: 'PT Sans', sans-serif
+    font-size: 2em
+    font-weight: 400
+    text-align: center
+    color: #273326
+    line-height: 1.5em
+
+b
+    font-weight: 700
+
+h1
+    font-family: 'Cherry Swash', cursive
+    font-size: 3em
+    font-weight: 700
+    text-align: center
+    color: #9E9A27
+    margin-bottom: 1em
+    line-height: 1em
+    border-bottom: #E8D84D 0.2em solid
+
+label
+    display: block
+    font-size: 1.5em
+    margin-bottom: 0.5em
+
+input[type=text]
+    font-size: 3em
+    text-align: center
+    color: #273326
+    margin-bottom: 0.3em
+    width: 4em
+    height: 1.5em
+    border: none
+    &:focus
+        border: #9E9A27 0.1em solid
+        outline: none
+
+button
+    +border-radius(20px)
+    background: #9E9A27
+    color: #fff
+    font-size: 2em
+    font-family: 'Cherry Swash', cursive
+    font-weight: 700
+    border: none
+    padding: 0.3em
+    margin-bottom: 0.3em

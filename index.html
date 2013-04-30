@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huckle Buckle Beanstalk</title>
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Huckle Buckle Beanstalk</h1>
+    <form id="guess-form">
+        <label for="guess">I have a number between 1 and 100. Try to guess it.</label>
+        <input type="text" name="guess" id="guess">
+        <div class="error off">Make sure your guess is a number between 1 and 100.</div>
+        <button type="submit">Guess</button>
+        <button id="reset" class="off">Play again</button>
+    </form>
+    <div class="response off">
+        <h2 id="guess-vs-number"></h2>
+        <h3 id="guess-vs-guess"></h3>
+        <p id="num-guesses"></p>
+    </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/game-ck.js"></script>
+</body>
+</html>
